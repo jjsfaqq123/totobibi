@@ -29,6 +29,25 @@
                             </a>
                         </li>
                      </ul>
+                     <ul class="toolbar-user clearfix align-right">
+                         <li class="user-item end-item">
+                             <a href="login.html" class="user-link">我的订单</a>
+                         </li>
+                         <li class="user-item end-item header-cart">
+                             <div class="user-link" id="minicart-link">
+                                 <i class="i-cart"></i>
+                                 <span>(0)</span>
+                             </div>
+                             <div class="minicart-cont" id="minicart-cont">
+                                <div class="minicart_top"></div>
+                                <div class="miniCarDetail">
+                                    <div class="cart-empty">购物车中还没有商品，快去选购吧</div>
+
+                                </div>
+                             </div>
+                         </li>
+                     </ul>
+                     <ul></ul>
                  </div>
             </div>
        </div>
@@ -72,7 +91,7 @@ export default {
          vertical-align: middle;
          text-decoration: none;
          color:#fff;
-         transition: all .15s
+         transition: all .15s;
      }
       .toolbar-menu .menu-item a:hover{
           color: darkgray
@@ -83,4 +102,86 @@ export default {
           height:9px;
           background:url("../../public/img/header/1.png")
       }
+      .toolbar-user .align-right{
+          margin-right: -15px;
+      }
+      .toolbar-user{
+          float:right;
+      }
+     .toolbar-user>.user-item{
+         position:relative;
+         float: left;
+         box-sizing: border-box;
+         transition: all .15s 
+     }
+     .toolbar-user>.user-item:hover .minicart-cont{
+         display: block;
+         background-color: #fff;
+         color:red;
+     }
+     .header-cart{
+         background-color:#f26a18;
+         z-index: 4;
+     }
+     #minicart-link{
+        cursor: pointer;
+        z-index:4;
+        background: #f26a18;
+     }
+     .user-link{
+        position: relative;
+        display: block;
+        padding:0 15px;
+        line-height: 40px;
+        vertical-align: middle;
+        color:#fff;
+        transition: all .15s;
+     }
+     .user-link:hover{
+         text-decoration: none;
+         color:darkgray;
+     }
+    .i-cart{
+        display: inline-block;
+        width:20px;
+        height:16px;
+        vertical-align: middle;
+        background: url(../../public/img/header/2.png)no-repeat center center
+    }
+    .minicart-cont{
+        position: absolute;
+        width:333px;
+        height:auto;
+        right:-1px;
+        top:39px;
+        padding-top:15px;
+        border:1px solid #c6c6c6;
+        box-shadow: 0 2px 10px rgba(0,0,0,.15);
+        background-color:#fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: none;
+        z-index: 5;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        transition: width .5s linear,height.5s linear;  
+    }
+    .minicart_top{
+        width:333px;
+        height:4px;
+        float: left;
+    }
+    .minicart_top{
+        width:328px;
+        padding-right: 4px;
+        padding-left: 1px;
+        float: left;
+    }
+  .cart-empty{
+      background:url(../../public/img/header/3.png) 20px center no-repeat;
+      padding:30px 0 30px 110px;
+      color:#ccc;
+      
+  }
 </style>
