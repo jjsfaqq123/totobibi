@@ -42,12 +42,23 @@
                                 <div class="minicart_top"></div>
                                 <div class="miniCarDetail">
                                     <div class="cart-empty">购物车中还没有商品，快去选购吧</div>
-
                                 </div>
                              </div>
                          </li>
+                         <li class="user-item end-item" id="header-qrcode-img">
+                             <a href="javascript:;" class="user-link">app下载</a>
+                             <div class="header-qrcode-line"></div>
+                             <div class="header-qrcode-img" id="header-qrcode-img">
+                                 <a href="#" class="header-qrcode-sys" target="_blank"></a>
+                                 <a href="#" class="header-qrcode-sys" target="_blank"></a>
+                             </div>
+                         </li>
                      </ul>
-                     <ul></ul>
+                     <ul class="toolbar-user" clearfix id="loginbar">
+                         <li class="item-item  login">
+                             <a href="login">登录</a>
+                         </li>
+                     </ul>
                  </div>
             </div>
        </div>
@@ -181,7 +192,48 @@ export default {
   .cart-empty{
       background:url(../../public/img/header/3.png) 20px center no-repeat;
       padding:30px 0 30px 110px;
-      color:#ccc;
-      
+      color:#ccc; 
+  }
+  .user-item{
+      position: relative;
+      float: left;
+      box-sizing: border-box;
+      transition: all .15s;
+  }
+  .user-item:hover .header-qrcode-img{
+      display: block;
+  }
+  .user-link{
+      position: relative;
+      display: block;
+      padding: 0 15px;
+      line-height: 40px;
+      vertical-align: middle;
+      color:#fff;
+      transition: all .15s
+  }
+  .header-qrcode-line{
+      display: none;
+      position: absolute;
+      z-index:20;
+      left: 0;
+      bottom:-2px;
+      width:100%;
+      height:2px;
+      background: #fff;
+  }
+  .header-qrcode-img{
+      display: none;
+      position:absolute;
+      right:-1px;
+      z-index: 10;
+      top:40px;
+      width: 174px;
+      height:235px;
+      background:url(../../public/img/header/4.png)no-repeat;
+      border:1px solid #c6c6c6;
+      border-radius: 4px;
+      border-top-right-radius: 0;
+      box-shadow: 0 1px 2px #ddd;
   }
 </style>
