@@ -56,17 +56,30 @@
                      </ul>
                      <ul class="toolbar-user" clearfix id="loginbar">
                          <li class="item-item  login">
-                             <a href="login">登录</a>
+                             <a href="login" class="user-link">登录</a>
+                         </li>
+                         <li class="item-item">
+                             <a href="#" class="user-link">注册</a>
                          </li>
                      </ul>
                  </div>
+            </div>
+             <div class="nav-header">
+                <div class="top-nav clearfix">
+                    <div class="logo" style="padding-right:10px">
+                        <a href="header.vue">
+                            <img src="../../public/img/header/logo.png" class="img-1">
+                        </a>
+                    </div>
+                </div>
             </div>
        </div>
     </div> 
 </template>
 <script>
+
 export default {
-    
+       
 }
 </script>
 <style scoped>
@@ -236,4 +249,38 @@ export default {
       border-top-right-radius: 0;
       box-shadow: 0 1px 2px #ddd;
   }
+  .toolbar-user .item-item{
+      position: relative;
+      float: left;
+      box-sizing: border-box;
+      transition: all .15s;
+  }
+   .toolbar-user .item-item .user-link{
+       position:relative;
+       display: block;
+       padding: 0 15px;
+       line-height: 40px;
+       vertical-align: middle;
+       color:#fff;
+       transition: all .15s
+   }
+   .toolbar-user .item-item .user-link:hover{
+      color:darkgray;
+   }
+   .nav-header{
+       margin: 0 auto;
+       max-width:1200px;
+   }
+   .top-nav{
+       height:90px;
+   }
+   .logo{
+       float: left;
+       padding:17px 100px 17px 0;
+   }
+   .img-1{
+       width:166px;
+       height:50px;
+   }
 </style>
+
