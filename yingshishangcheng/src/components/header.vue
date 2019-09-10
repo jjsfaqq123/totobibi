@@ -71,6 +71,126 @@
                             <img src="../../public/img/header/logo.png" class="img-1">
                         </a>
                     </div>
+                    <div class="nav-list" id="middle-nav">
+                        <div class="middle-inner">
+                            <ul class="clearfix inner-scrool" style="width:8000px;">
+                                <li class="nav-list-item">
+                                    <a href="#" class="item-link">摄影机</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">智能锁</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">猫眼门铃</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">套装方案</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">摄影机</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">传感报警</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">智能控制</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">运动数码</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">儿童看护</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">智能存储</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">网络通讯</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">配件</a>
+                                </li>
+                                 <li class="nav-list-item">
+                                    <a href="#" class="item-link">更多</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="child-list" id="child-list">
+                            <div class="product-menu">
+                                <div class="child-container">
+                                    <ul class="item-ul clearfix">
+                                        <li class="child-list-item">
+                                            <div class="figure thumb">
+                                                <a href="#">
+                                                    <img src="../../public/img/header/9.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <h4 class="goods-title">
+                                                <a href="#" class="name-link"  title="【买就赠】S6语音控制防抖4K运动相机">【买就赠】S6语音控制防抖4K运动相机</a>
+                                                <p class="price">￥195(起)</p>
+                                            </h4>
+                                        </li>
+                                         <li class="child-list-item">
+                                            <div class="figure thumb">
+                                                <a href="#">
+                                                    <img src="../../public/img/header/6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <h4 class="goods-title">
+                                                <a href="#" class="name-link"  title="【限时立省30】C3WN高清互联网摄像机 标准版">【限时立省30】C3WN高清互联网摄像机 标准版</a>
+                                                <p class="price">￥199(起)</p>
+                                            </h4>
+                                        </li>
+                                         <li class="child-list-item">
+                                            <div class="figure thumb">
+                                                <a href="#">
+                                                    <img src="../../public/img/header/7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <h4 class="goods-title">
+                                                <a href="#" class="name-link"  title="【新品上市】C4X智能双目互联网摄像机400万高清 POE版-9月底发货">【新品上市】C4X智能双目互联网摄像机400万高清 POE版-9月底发货</a>
+                                                <p class="price">￥489(起)</p>
+                                            </h4>
+                                        </li>
+                                          <li class="child-list-item">
+                                            <div class="figure thumb">
+                                                <a href="#">
+                                                    <img src="../../public/img/header/8.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <h4 class="goods-title">
+                                                <a href="#" class="name-link"  title="【新品上市】C3X Wi-Fi版智能双摄互联网摄像机-9月底发货">【新品上市】C3X Wi-Fi版智能双摄互联网摄像机-9月底发货</a>
+                                                <p class="price">￥489(起)</p>
+                                            </h4>
+                                        </li>
+                                         <li class="child-list-item">
+                                            <div class="figure thumb">
+                                                <a href="#">
+                                                    <img src="../../public/img/header/5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <h4 class="goods-title">
+                                                <a href="#" class="name-link"  title="【立省50】C1C萤石互联网摄像机 高清夜视版/1080P">【立省50】C1C萤石互联网摄像机 高清夜视版/1080P</a>
+                                                <p class="price">￥149(起)</p>
+                                            </h4>
+                                        </li>     
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-ctrl">
+                            <img src="../../public/img/header/5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <div class="form-group">
+                            <form id="mall-form">
+                                <span class="algolia-autocomplete">
+                                    <input type="text" class="search-box">
+                                </span>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
        </div>
@@ -79,7 +199,7 @@
 <script>
 
 export default {
-       
+
 }
 </script>
 <style scoped>
@@ -235,6 +355,9 @@ export default {
       height:2px;
       background: #fff;
   }
+  .inner-scrool:hover{
+      width:200px
+  }
   .header-qrcode-img{
       display: none;
       position:absolute;
@@ -248,6 +371,7 @@ export default {
       border-radius: 4px;
       border-top-right-radius: 0;
       box-shadow: 0 1px 2px #ddd;
+      transition: all 5s linear;
   }
   .toolbar-user .item-item{
       position: relative;
@@ -264,6 +388,7 @@ export default {
        color:#fff;
        transition: all .15s
    }
+  
    .toolbar-user .item-item .user-link:hover{
       color:darkgray;
    }
@@ -282,5 +407,164 @@ export default {
        width:166px;
        height:50px;
    }
+   .nav-list{
+       float:left;
+       width:680px;
+       height:80px;
+       margin-left: 15px;
+       overflow: hidden;
+   }
+   .middle-inner{
+       position: relative;
+       height:100%;
+       overflow: hidden;
+   }
+   .inner-scrool{
+       width:1015px;
+       margin-left:0px;
+       max-height:80px;
+   }
+   .inner-scrool ul{
+       position: absolute;
+       display: block;
+       overflow: hidden;
+   }
+   .nav-list .nav-list-item{
+       float: left;
+       cursor: pointer;
+   }
+   .nav-list-item .item-link{
+       display:block;
+       padding:40px 15px 20px;
+       color:#767676;
+       /* transition: all 5s linear; */
+       padding-left: 0;
+       text-decoration: none;
+   }
+   .nav-list-item .item-link:hover {
+       color:#f26a18;
+       
+       /* display: block; */
+   }
+   .child-list{
+       top:120px;
+       position: absolute;
+       left:0;
+       height:0;
+       width:100%;
+       min-width:1200px;
+       background-color:#fff;
+       z-index:20;
+       transition: all .5s linear;
+   }
+     .child-list .active{
+        height:200px;
+        width:100%;
+        border-top:1px solid #e6e6e6;
+        border-bottom:1px solid #e6e6e6;
+        box-shadow: 0 5px 5px rgba(0 0 0 .2);
+    }
+   .child-list ul{
+       width:1200px;
+       position: absolute;
+       display: none;
+       margin-left: 0;
+       overflow: hidden;
+       margin-top:26px;
+      
+   }
+    /* .child-list ul:hover{
+        width:100%;
+         border-top: 1px solid #4c4c4c; 
+    } */
+   .product-menu{
+       position: relative;
+       width:1199px;
+       height:100%;
+       margin: 0 auto;
+       /* overflow: hidden; */
+   }
+  .child-container{
+       width:1200px;
+       height:100%;
+       margin: 0 auto;
+       overflow: hidden;
+   }
+    .child-list-item{
+        position: relative;
+        float: left;
+        width:240px;
+        height:200px;
+        text-align: center;
+        cursor: auto;
+        overflow: hidden;
+    }
+    .thumb{
+        margin:5px 56px;
+        width:128px;
+        height:118px;
+    }
+    .thumb a{
+        width:100%;
+        height:100%;
+        display: block;
+    }
+     .thumb a img{
+         width:128px;
+         height:118px;
+     }
+     .goods-title{
+         font-size: 14px;
+         font-weight: 500;
+         text-align: center;
+     }
+     .goods-title .name-link{
+         height:19px;
+         display: block;
+         overflow: hidden;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+         color:#232323;
+         text-decoration: none;
+     }
+     .price{
+         font-size: 14;
+         color:#ff4301;
+     }
+     .nav-list .right-ctrl{
+         position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 94px;
+        left: 50%;
+        margin-left: 275px;
+        cursor: pointer;
+     }
+     .search-box {
+        position: relative;
+        float: right;
+        width: 297px;
+        height: 40px;
+        padding: 25px 0;
+    }
+    .algolia-autocomplete {
+    width: 245px;
+    position: relative;
+    display: inline-block;
+    direction: ltr;
+    }
+    .search-box input {
+    position: relative;
+    vertical-align: top;
+    float: left;
+    width: 235px;
+    height: 38px;
+    padding: 0 5px;
+    line-height: 40px;
+    vertical-align: middle;
+    background-color: #FDFDFD;
+    border: 1px solid #E1E1E1;
+    transition: all .15s;
+}
 </style>
 
