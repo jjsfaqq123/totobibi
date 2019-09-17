@@ -186,9 +186,16 @@
                         <div class="form-group">
                             <form id="mall-form">
                                 <span class="algolia-autocomplete">
-                                    <input type="text" class="search-box">
+                                    <input type="text" class="search-box search">
                                 </span>
+                                <button type="submit" class="auto-complete">
+                                    <i class="search-icon"></i>
+                                </button>
                             </form>
+                        </div>
+                        <div class="hot-worlds" id=hot-worlds>
+                            <a href="#" class="hot-world-item">C6C</a>
+                            <a href="#" class="hot-world-item">C3W</a>
                         </div>
                     </div>
                 </div>
@@ -565,6 +572,56 @@ export default {
     background-color: #FDFDFD;
     border: 1px solid #E1E1E1;
     transition: all .15s;
-}
+    outline:none;
+    }
+    .search-box .search:focus{
+        border-color:#f26b18
+    }
+    .search-box button.auto-complete{
+        position: absolute;
+        top:24px;
+        right:11px;
+        outline: none;
+    }
+    .search-box button.auto-complete:hover{
+        background-color: #f26a18;
+    }
+     .search-box  button{
+         width:50px;
+         height:40px;
+         cursor: pointer;
+         background-color:#FDFDFD;
+         border:1px solid #E1E1E1;
+         border-left:none;
+         transition: all .15s
+     }
+     .search-icon{
+         display: inline-block;
+         width:50px;
+         height:40px;
+         vertical-align: middle;
+         background: url("../../public/img/header/6.png")no-repeat center center;
+         transition: all .15s;
+     }
+     .hot-worlds{
+         position:absolute;
+         width:80px;
+         top:33px;
+         right:63px;
+         height:24px;
+         max-width:140px;
+     }
+     .hot-world-item{
+         padding:4px;
+         margin-left: 5px;
+         color:#767676;
+         font-size:12px;
+         background-color: #ededed;
+         text-decoration: none;
+         transition: all .1s linear;
+     }
+      .hot-world-item:hover{
+          background-color:#f26a18;
+      }
 </style>
 

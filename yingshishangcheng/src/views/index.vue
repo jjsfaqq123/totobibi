@@ -1,0 +1,81 @@
+<template>
+   <div class="container">
+    <div id="demo" class="carousel" data-ride="carousel">
+        <!-- 1.轮播图片-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="../../public/img/index/1.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img  class="w-100" src="../../public/img/index/2.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img  class="w-100" src="../../public/img/index/3.jpg"/>
+            </div>
+            <div class="carousel-item">
+                <img  class="w-100" src="../../public/img/index/4.jpg"/>
+            </div>
+             <div class="carousel-item">
+                <img  class="w-100" src="../../public/img/index/5.jpg"/>
+            </div>
+             <div class="carousel-item">
+                <img  class="w-100" src="../../public/img/index/6.jpg"/>
+            </div>
+             <div class="carousel-item">
+                <img  class="w-100" src="../../public/img/index/7.jpg"/>
+            </div>
+        </div>
+        <!-- 3.轮播指示器-->
+        <div class="imgslide-nav">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+            <li data-target="#demo" data-slide-to="6"></li>
+        </ul>
+        </div>
+    </div>
+</div>
+</template>
+<script>
+export default {
+    
+}
+</script>
+<style scoped>
+     .carousel-control-prev,
+        .carousel-control-next{
+            width:4%;height: 20%;
+            background:#aaa;
+            border-radius: 0.25rem;
+            top:40%;
+        }
+        .carousel-indicators li{
+            width:23px;height:12px;
+            background-color:#fff;
+            border-radius: 50%;
+            margin:0 4px;
+        }
+        .carousel-indicators li:hover{
+            cursor: pointer;
+        }
+        .carousel-indicators{
+            /* width:20px; */
+            height:23px;
+            line-height: 23px;
+        }
+        .carousel-indicators .active{
+            background-color:#0aa1ed;
+        }  
+        .imgslide-nav{
+            width:167px;
+            height:12px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+</style>
