@@ -239,7 +239,7 @@ export default {
          display: block;
          padding:0  10px;
          line-height: 40px;
-         vertical-align: middle;
+         /* vertical-align: middle; */
          text-decoration: none;
          color:#fff;
          transition: all .15s;
@@ -284,7 +284,7 @@ export default {
         display: block;
         padding:0 15px;
         line-height: 40px;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         color:#fff;
         transition: all .15s;
      }
@@ -348,7 +348,7 @@ export default {
       display: block;
       padding: 0 15px;
       line-height: 40px;
-      vertical-align: middle;
+      /* vertical-align: middle; */
       color:#fff;
       transition: all .15s
   }
@@ -391,7 +391,7 @@ export default {
        display: block;
        padding: 0 15px;
        line-height: 40px;
-       vertical-align: middle;
+       /* vertical-align: middle; */
        color:#fff;
        transition: all .15s
    }

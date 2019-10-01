@@ -4,25 +4,25 @@
         <!-- 1.轮播图片-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="../../public/img/index/1.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/1.jpg"/>
             </div>
             <div class="carousel-item">
-                <img  class="w-100" src="../../public/img/index/2.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/2.jpg"/>
             </div>
             <div class="carousel-item">
-                <img  class="w-100" src="../../public/img/index/3.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/3.jpg"/>
             </div>
             <div class="carousel-item">
-                <img  class="w-100" src="../../public/img/index/4.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/4.jpg"/>
             </div>
              <div class="carousel-item">
-                <img  class="w-100" src="../../public/img/index/5.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/5.jpg"/>
             </div>
              <div class="carousel-item">
-                <img  class="w-100" src="../../public/img/index/6.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/6.jpg"/>
             </div>
              <div class="carousel-item">
-                <img  class="w-100" src="../../public/img/index/7.jpg"/>
+                <img  class="w-100 d-block" src="../../public/img/index/7.jpg"/>
             </div>
         </div>
         <!-- 3.轮播指示器-->
@@ -41,8 +41,7 @@
 </div>
 </template>
 <script>
-export default {
-    
+export default { 
 }
 </script>
 <style scoped>
@@ -77,5 +76,9 @@ export default {
             bottom: 20px;
             right: 20px;
             z-index: 2;
+        }
+        #demo:hover{
+            /* transition: all .5s linear; */
+            transform: scale(1.01)
         }
 </style>
