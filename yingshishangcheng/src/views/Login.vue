@@ -8,8 +8,9 @@
                 <div id="parallax_form" class="animated">
                     <p class="description_a">欢迎登录萤石商城</p>
                     <form id="form">
-                        <input  type="text" placeholder="用户名或手机号" style="margin-bottom:14px !important">
-                        <input  type="parssword" placeholder="请输入密码" style="margin-bottom:14px !important">
+                        <el-input  v-model="uname" type="text" placeholder="用户名或手机号" style="margin-bottom:14px !important" :autofocus=true></el-input>
+                        <h6 style="color:red;display:none">用户名必须介于6~12位数字或字母</h6>
+                        <el-input  v-model="upwd" type="password" placeholder="请输入密码" style="margin-bottom:14px !important"></el-input>
                     </form>
                     <div class="clearfix"></div>
                     <div class="msic">
@@ -17,20 +18,54 @@
                         <a href="#" class="forget_pass">忘记密码?</a>
                     </div>
                      <div class="clearfix"></div>
-                     <a  class="login">登&nbsp;&nbsp;&nbsp;录</a>
+                     <a  class="login" @click="login" :plain="true">登&nbsp;&nbsp;&nbsp;录</a>
                      <div class="line normal"></div>
                      <p class="description_b normal">还没有账户？ 那就注册一个吧！</p>
                      <a href="#" class="register normal" id="register">注册</a>
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="hikvision"></div>
+                版权所有：
+                <a href="/" target="_blank">杭州萤石网络有限公司</a>
+                    &nbsp;| &nbsp;
+                <a href="/" target="_blank">浙ICP备16009593号-1</a>
+            </div>
+        </div>
     </div>
 </template>
 <script>
 export default {
+    data(){
+        return {
+            uname:"",
+            upwd:""
+        }
+    },
     methods:{
-        h(){
-            
+        login(){
+            var u=this.uname;
+            var p=this.upwd;
+            var reg=/^[a-z0-9]{3,12}$/;
+            if(reg.test(u)==false){
+                this.$message.error("用户名错误")
+                return;
+            }
+             if(reg.test(p)==false){
+                this.$message.error("密码错误")
+                return;
+            }
+            var url="login";
+            var obj={uname:u,upwd:p}
+            this.axios.get(url,{params:obj}).then(res=>{
+                if(res.data.code<0){
+                    this.$message.error("用户名密码错误")
+                }else{
+                    this.$router.push("/")
+                }
+            })
         }
     }
 }
@@ -191,7 +226,41 @@ export default {
          bottom: 75px;
      }
      .login_mall{
-         padding-top:100px;
+         padding-top:120.5px;
      }
+     .footer{
+         width:100%;
+        min-width: 960px;
+        height:34px;
+        margin-top: 50px;
+        border-top: none;
+        border-bottom: none;
+        margin-top: 12px;
+        clear: both;
+        position: static;
+        margin-bottom: 14px;
+        z-index: 999;
+        font-size: 12px;
+        font-family:宋体，arial,STHeiti;
+     }
+      .footer>.wrapper{
+          width:960px;
+          margin: auto;
+          line-height: 32px;
+          color:#626262;
+      }
+      .hikvision{
+          width:111px;
+          height:18px;
+          float: left;
+          padding-left: 220px;
+          background: url("../../public/img/index/icon_logobt.png")right top no-repeat;
+          margin-left: 0px;
+          margin-top: 8px;
+      }
+       .footer>.wrapper a{
+           line-height: 32px;
+           color:#626262;
+       }
 </style>
 

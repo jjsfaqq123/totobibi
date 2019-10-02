@@ -1,0 +1,10 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS yingshi;
+CREATE DATABASE yingshi CHARSET=UTF8;
+USE yingshi;
+CREATE TABLE login(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    uname VARCHAR(50),
+    upwd VARCHAR(32)
+);
+INSERT INTO login VALUES("null",'xiaojiang',md5('123'));

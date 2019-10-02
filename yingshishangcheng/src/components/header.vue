@@ -56,7 +56,7 @@
                      </ul>
                      <ul class="toolbar-user" clearfix id="loginbar">
                          <li class="item-item  login">
-                             <a href="login" class="user-link">登录</a>
+                             <router-link to="login" class="user-link" >登录</router-link>
                          </li>
                          <li class="item-item">
                              <a href="#" class="user-link">注册</a>
