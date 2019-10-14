@@ -1,4 +1,6 @@
 <template>
+<div>
+    <hea></hea>
    <div class="container">
     <div id="demo" class="carousel" data-ride="carousel">
         <!-- 1.轮播图片-->
@@ -237,13 +239,14 @@
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">【新品-全彩标准版】C3C高清互联网摄像机-10月中旬发货</a>
+                                <a href="#" class="name-link">
+                                【新品首发】CP1萤石互联网摄像机</a>
                             </h4>
-                            <p class="price">￥299（起）</p>
+                            <p class="price">￥199（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    【全彩升级】200万超清，夜间彩色监控，H.265智能编码，AI人形检测，防水防尘                                    
+                                    【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控                                                                       
                                 </a>
                             </div>
                         </li>
@@ -255,14 +258,14 @@
                             </div>
                             <h4 class="goods-title">
                                 <a href="#" class="name-link">
-                                    【立省30】C3WN高清互联网摄像机 标准版
+                                    【室内高清】C6C互联网摄像机-无极巡航版/1080P                                    
                                 </a>
                             </h4>
-                            <p class="price">￥199（起）</p>
+                            <p class="price">￥349（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    无线连接，防水防尘，高清夜视支持接入大部分海康硬盘录像机                                                                        
+                                    【赠一个月云存储】新升级，360°加速循环转动，智能人形追踪，双向通话，加强看家护店之选                                                                                                           
                                 </a>
                             </div>
                         </li>
@@ -274,14 +277,14 @@
                             </div>
                             <h4 class="goods-title">
                                 <a href="#" class="name-link">
-                                    【日夜全彩】C3W摄像机全彩版/1080P/夜间全彩                                   
+                                    【高清触控】DP1萤石智能猫眼（触控屏版）                                                                       
                                 </a>
                             </h4>
-                            <p class="price">￥399（起）</p>
+                            <p class="price">￥799（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    高清全彩夜视，告别夜间黑白监控，1080P高清，个性语音提示支持接入大部分海康硬盘录像机                                                                                                            
+                                    智能猫眼，高清触控屏，红外夜视，可远程视频对话访客                                                                                                                                                
                                 </a>
                             </div>
                         </li>
@@ -293,14 +296,14 @@
                             </div>
                             <h4 class="goods-title">
                                 <a href="#" class="name-link">
-                                    【声光告警】 C3W壁挂式互联网摄像机                                                                      
+                                    【指纹感应】DL11S家用指纹互联网密码锁                                                                                                         
                                 </a>
                             </h4>
-                            <p class="price">￥249（起）</p>
+                            <p class="price">￥1999（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    【免费送7天云存储一个月】声光告警，语音对讲，防水防尘，无线稳定连接支持接入大部分海康硬盘录像机                                                                                                                                                
+                                    新品上市，安全等级高，远程授权密码开门，指纹感应灵敏！                                                                                                                                                                                    
                                 </a>
                             </div>
                         </li>
@@ -331,14 +334,14 @@
                             </div>
                             <h4 class="goods-title">
                                 <a href="#" class="name-link">
-                                    【POE套装推荐】200万高清POE防水套装/1080P/4mm                                                                                                                                            
+                                    【人形检测】C1C萤石互联网摄像机 高清夜视版/1080P                                                                                                                                                                                
                                 </a>
                             </h4>
-                            <p class="price">￥508（起）</p>
+                            <p class="price">￥199（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    250米网线供电，支持16个摄像机同步监控，支持多品牌高清摄像机接入，商铺社区通用                                                                                                                                                                                                                       
+                                    【送1个月云存储】12米升级夜视，人形检测，精准有效告警，双向通话，磁吸安装！经济便捷，看家看店之选                                                                                                                                                                                                                                                          
                                 </a>
                             </div>
                         </li>
@@ -346,15 +349,215 @@
                 </div>
             </div>
         </div>
+        <div class="goods-card">
+            <div class="card-header">
+                <h2>运动必备</h2>
+                <a href="javascript:;" class="view-more">查看全部</a>
+            </div>
+            <div class="card-body clearfix">
+                <div class="goods-bannar la">
+                    <div class="video">
+                        <video src="../../public/img/index/141161717.mp4" controls autoplay loop 
+                        style="object-fit:cover;width:710ox;height:600px;"></video>
+                    </div>
+                </div>
+                <div class="goods-list la-list">
+                    <ul class="clearfix">
+                        <li class="goods-item full">
+                            <div class="figure movetop" style="height:248px;">
+                                <a href="#">
+                                    <img src="../../public/img/index/28.jpg" class="index-img scale">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="goods-item no-bottom">
+                            <div class="figure movetop">
+                                <a href="#">
+                                    <img src="../../public/img/index/29.jpg" alt="">
+                                </a>
+                                <h4 class="goods-title">
+                                    <a href="#">S1C行车记录运动相机</a>
+                                </h4>
+                                <p class="price">￥299(起)</p>
+                                <p class="comment"></p>
+                            </div>
+                        </li>
+                        <li class="goods-item no-bottom aside-right">
+                            <div class="figure movetop">
+                                <a href="#">
+                                    <img src="../../public/img/index/30.jpg" alt="">
+                                </a>
+                                <h4 class="goods-title">
+                                    <a href="#">S2行车记录仪运动相机</a>
+                                </h4>
+                                <p class="price">￥399(起)</p>
+                                <p class="comment"></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="goods-card">
+        <div class="card-header" style="padding:0">
+            <h2>套装专区</h2>
+            <a href="javascript:;" class="view-more">查看全部</a>
+        </div>
+        <div class="card-body clearfix  haha">
+            <div class="goods-banner m">
+                <div class="goods-banner-item" style="overflow:none">
+                    <a href="#">
+                        <img src="../../public/img/index/31.jpg" class="index-img scale">
+                    </a>
+                </div>
+            </div>
+            <div class="goods-list m-list">
+                <ul class="clearfix">
+                    <li class="goods-item no-bottom">
+                        <div class="figure movetop">
+                            <a href="#">
+                                <img src="../../public/img/index/32.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javascript:;" class="name-link">【全彩双摄新品】POE400万高清双摄暗光夜视套装-10月中发货</a>
+                        </h4>
+                        <p class="price">￥799(起)</p>
+                        <p class="key-worlds">
+                            <a href="javascript:;"></a>
+                        </p>
+                    </li>
+                    <li class="goods-item no-bottom">
+                        <div class="figure movetop">
+                            <a href="#">
+                                <img src="../../public/img/index/1.png" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javascript:;" class="name-link">
+                            【新品上市】POE200万高清双摄暗光夜视套装C3X-10月中发货</a>
+                        </h4>
+                        <p class="price">￥799(起)</p>
+                        <p class="key-worlds">
+                            <a href="javascript:;"></a>
+                        </p>
+                    </li>
+                    <li class="goods-item no-bottom aside-right">
+                        <div class="figure movetop">
+                            <a href="#">
+                                <img src="../../public/img/index/1.png" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javascript:;" class="name-link">
+                            【全彩双摄新品】室外无线双摄暗光全彩套装C3X-10月中发货</a>
+                        </h4>
+                        <p class="price">￥799(起)</p>
+                        <p class="key-worlds">
+                            <a href="javascript:;"></a>
+                        </p>
+                    </li>
+                </ul>   
+            </div> 
+        </div>
+    </div>
+    <div class="goods-card">
+        <div class="card-header" style="padding:0">
+            <h2>配件专区</h2>
+            <a href="javascript:;" class="view-more">查看全部&nbsp;></a>
+        </div>
+        <div class="card-body clearfix">
+            <div class="goods-banner sm">
+                <div class="goods-banner-item">
+                    <a href="javascript:;">
+                        <img src="../../public/img/index/33.jpg" class="index-img  scale">
+                    </a>
+                </div>
+            </div>
+            <div class="goods-list sm-list">
+                <ul class="clearfix">
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/34.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">萤石视频监控专用Micro SD存储卡【质保2年</a>
+                        </h4>
+                        <p class="price">￥59(起)</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/35.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">云存储充值卡</a>
+                        </h4>
+                        <p class="price">￥120(起)</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/36.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">运动相机通用自拍杆1</a>
+                        </h4>
+                        <p class="price">￥79</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/2.png" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">CS-CMT-BOXA通用藏线盒（仅供C3C,E,S系列使用）</a>
+                        </h4>
+                        <p class="price">￥50</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/37.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">C2C C6H C6C  C2C全景 通用电源线</a>
+                        </h4>
+                        <p class="price">￥10</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</div>
 </div>
 </template>
 <script>
+ import  hea from "../components/header.vue"
 export default { 
-
+    components:{hea}
 }
 </script>
 <style scoped>
+
     .container{
         padding-left: 0px;
         padding-right: 0px;
@@ -468,7 +671,7 @@ export default {
             margin-left: 480px;
         }
         .goods-list{
-            height:600px;
+            height:300px;
         }
         .clearfix{
             list-style: none;
@@ -581,7 +784,7 @@ export default {
             .carouseo-ti{
                 position: absolute;
                 top:0px;
-                left:-1400px;
+                left:83px;
             }
             .carouseo-ti >li{
                 width:11px;
@@ -589,6 +792,108 @@ export default {
             .goods-banner{
                 position: relative;
                 float: left;
+                height:300px;
+            }
+            .goods-card{
+                position: relative;
+                margin-top: 55px;
+            }
+            .card-header{
+                position: relative;
+                width:100%;
+            }
+            .card-header h2{
+                color:#2b2b2b;
+                font-size: 24px;
+                font-weight: 200;
+            }
+            .view-more{
+                position: absolute;
+                right: 0;
+                top:6px;
+                color:#232323;
+                font-size: 12px;
+            }
+            .la{
+                width:710px;
+            }
+            .goods-bannar{
+                position: relative;
+                float: left;
                 height:600px;
             }
+            .video{
+                width:100%;
+                height:100%;
+                overflow: hidden;
+            }
+            .goods-list{
+                height:300px;
+            }
+            .la-list{
+                margin-left: 720px;
+            }
+            .full{
+                width:100%;
+                border-right: 0;
+                border-bottom:1px slid #e2e2e2;
+            }
+            .goods-item{
+                position: relative;
+                float: left;
+                /* width:240px; */
+                height:300px;
+                text-align:center;
+                box-sizing: border-box;
+                overflow: hidden;
+                border-radius: 1px solid #e2e2e2;
+            }
+            .movetop:hover{
+                margin-top: 10px;
+            }
+            .full>.figure{
+                width:420px;
+            }
+            .scale:hover{
+                transform: matrix(1.03,0,0,1.03,0,0);
+            }
+            .card-header{
+                width:100%;
+                position: relative;
+            }
+            .goods-banner-item{
+                width:100%;
+                height:100%;
+                /* overflow: hidden; */
+            }
+            .scale{transition: all .5s linear;}
+          .clearfix:after{
+              content:"";
+              display: block;
+              height:0;
+              visibility: hidden;
+              clear: both;
+          }
+          .card-footer{
+              margin-top:55px;
+              width:100%;
+              height: 1px;
+              background-color: #e2e2e2;
+          }
+          .haha{height:300px;}
+          .goods-h{
+              position: relative;
+              margin-top: 55px;
+              border-top:1px solid #e2e2e2;
+          }
+          .card-t{width:100%;height:20px;position:absolute;left:0}
+          .card-t h2{
+              color:#2b2b2b;
+              font-size: 24px;
+              font-weight: 200;
+          }
+          .sm-list{margin-left: 240px;}
+          .goods-banner-item a{
+              display: block;
+          }
 </style>
