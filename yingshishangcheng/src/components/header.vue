@@ -59,7 +59,7 @@
                              <router-link to="login" class="user-link" >登录</router-link>
                          </li>
                          <li class="item-item">
-                             <a href="#" class="user-link">注册</a>
+                             <a href="/fall" class="user-link">注册</a>
                          </li>
                      </ul>
                  </div>
@@ -362,9 +362,9 @@ export default {
       height:2px;
       background: #fff;
   }
-  .inner-scrool:hover{
+  /* .inner-scrool:hover{
       width:200px
-  }
+  } */
   .header-qrcode-img{
       display: none;
       position:absolute;
@@ -426,6 +426,10 @@ export default {
        height:100%;
        overflow: hidden;
    }
+    .middle-inner:hover .inner-scrool{
+        height:500px;
+        z-index:999;
+    }
    .inner-scrool{
        width:1015px;
        margin-left:0px;

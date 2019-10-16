@@ -1,27 +1,27 @@
 <template>
-<div>
+<div id="container">
     <hea></hea>
    <div class="container">
     <div id="demo" class="carousel" data-ride="carousel">
         <!-- 1.轮播图片-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img  class=" d-block" src="../../public/img/index/1.jpg"/>
+                <img  class="d-block index-img scale" src="../../public/img/index/1.jpg"/>
             </div>
             <div class="carousel-item">
-                <img  class=" d-block" src="../../public/img/index/2.jpg"/>
+                <img  class=" d-block index-img scale" src="../../public/img/index/2.jpg"/>
             </div>
             <div class="carousel-item">
-                <img  class=" d-block" src="../../public/img/index/3.jpg"/>
+                <img  class=" d-block index-img scale" src="../../public/img/index/3.jpg"/>
             </div>
             <div class="carousel-item">
-                <img  class=" d-block" src="../../public/img/index/4.jpg"/>
+                <img  class=" d-block index-img scale" src="../../public/img/index/4.jpg"/>
             </div>
              <div class="carousel-item">
-                <img  class=" d-block" src="../../public/img/index/5.jpg"/>
+                <img  class=" d-block index-img scale" src="../../public/img/index/5.jpg"/>
             </div>
              <div class="carousel-item">
-                <img  class=" d-block" src="../../public/img/index/6.jpg"/>
+                <img  class=" d-block index-img scale" src="../../public/img/index/6.jpg"/>
             </div>
         </div>
         <!-- 3.轮播指示器-->
@@ -72,10 +72,10 @@
                         <!-- 1.轮播图片-->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img  class=" d-block" src="../../public/img/index/12.jpg"/>
+                                <img  class=" d-block index-img scale" src="../../public/img/index/12.jpg"/>
                             </div>
                             <div class="carousel-item">
-                                <img  class=" d-block" src="../../public/img/index/13.jpg"/>
+                                <img  class=" d-block index-img scale" src="../../public/img/index/13.jpg"/>
                             </div>
                         </div>
                         <div class="imgslide-nav">
@@ -216,10 +216,10 @@
                         <!-- 1.轮播图片-->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img  class=" d-block" src="../../public/img/index/20.jpg"/>
+                                <img  class=" d-block index-img scale" src="../../public/img/index/20.jpg"/>
                             </div>
                             <div class="carousel-item">
-                                <img  class=" d-block" src="../../public/img/index/21.jpg"/>
+                                <img  class=" d-block index-img scale" src="../../public/img/index/21.jpg"/>
                             </div>
                         </div>
                         <div class="imgslide-nav">
@@ -542,22 +542,122 @@
                         <p class="comment"></p>
                         <div class="key-worlds"></div>
                     </li>
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/38.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">C2C C6H C6C  C2C全景 通用电源线</a>
+                        </h4>
+                        <p class="price">￥25</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                    <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/39.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">C6  C6C C6T C6TC C6P C6H 宇航员版   安装底座片</a>
+                        </h4>
+                        <p class="price">￥5</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
+                     <li class="goods-item">
+                        <div class="figure movetop">
+                            <a href="javascript:;">
+                                <img src="../../public/img/index/40.jpg" class="index-img">
+                            </a>
+                        </div>
+                        <h4 class="goods-title">
+                            <a href="javasript:;" class="name-link">Z3 HDMI高清直播编码器</a>
+                        </h4>
+                        <p class="price">￥1499</p>
+                        <p class="comment"></p>
+                        <div class="key-worlds"></div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div></div>
+        <div class="caed"></div>
+    </div>
+    <!-- 服务专区 -->
+    <div class="goods-card" id="service-card">
+        <div class="card-header">
+            <h2>服务专区</h2>
+            <a href="javascript:;" class="view-more"></a>
+        </div>
+        <div class="card-body service-card-body clearfix">
+            <div class="service-item">
+                <a href="javascript:;" target="_blank">
+                    <img src="../../public/img/index/41.jpg" class="index-img scale">
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="javascript:;" target="_blank">
+                    <img src="../../public/img/index/42.jpg" class="index-img scale">
+                </a>
+            </div>
+             <div class="service-item end-item">
+                <a href="javascript:;" target="_blank">
+                    <img src="../../public/img/index/43.jpg" class="index-img scale">
+                </a>
+            </div>
+        </div>
+        <div class="caed"></div>
+    </div>
+    <!-- 视频体验 -->
+    <div class="goods-card" id="video-card">
+        <div class="card-header">
+            <h2>视频体验</h2>
+        </div>
+        <div class="card-body video-card-body cleaefix">
+            <div class="video-item">
+                <div class="video" style="height:100%;">
+                    <a href="javascript:;">
+                        <img src="../../public/img/index/44.jpg" class="index-img scale">
+                    </a>
+                </div>
+            </div>
+             <div class="video-item">
+                <div class="video" style="height:100%;">
+                    <a href="javascript:;">
+                        <img src="../../public/img/index/45.jpg" class="index-img scale">
+                    </a>
+                </div>
+            </div>
+             <div class="video-item end-item">
+                <div class="video" style="height:100%;">
+                    <a href="javascript:;">
+                        <img src="../../public/img/index/46.jpg" class="index-img scale">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<foot></foot>
 </div>
 </template>
 <script>
- import  hea from "../components/header.vue"
+ import  hea from "../components/header.vue";
+ import  foot from "../components/footer.vue"
 export default { 
-    components:{hea}
+    components:{hea,foot}
 }
 </script>
 <style scoped>
-
+    /* #container{
+        height:100%;
+        width:100%;
+        min-width: 1200px;
+        margin-bottom: 80px;
+    } */
     .container{
         padding-left: 0px;
         padding-right: 0px;
@@ -597,10 +697,10 @@ export default {
             right: 20px;
             z-index: 2;
         }
-        #demo:hover{
-            /* transition: all .5s linear; */
+        /* #demo:hover{
+            transition: all .5s linear;
             transform: scale(1.01)
-        }
+        } */
         .bottom-banner{
             width:1200px;
             margin-top: 10px;
@@ -896,4 +996,42 @@ export default {
           .goods-banner-item a{
               display: block;
           }
+          .caed{
+              margin-top:55px;
+             width:100%;
+             height:1px;
+             background-color: #e2e2e2;
+          }
+          .service-card-body>.service-item{
+              float: left;
+              width:390px;
+              height:262px;
+              margin-right: 15px;
+          }
+          .service-item a{
+              width:100%;
+              display: block;
+              height:100%;
+              overflow: hidden;
+          }
+          .index-img{
+              min-width: 100%;
+              max-height: 100%;
+              height: auto;
+              border: 0;
+              vertical-align: middle;
+          }
+          .service-card-body>.end-item{
+              margin-right: 0px;
+          }
+          .video-item{
+              float: left;
+              width:395px;
+              height:326px;
+              margin-right: 7px;
+          }
+          .video-item.end-item{
+              margin-right: 0px;
+          }
+          .video-card-body{height:356px;}
 </style>
