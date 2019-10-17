@@ -44,43 +44,43 @@
                     <ul>
                         <li>
                             <label for="username">
-                                <up:name class="up_noblank">用户名:</up:name>
-                                <div class="inputTip"></div>
+                                <span class="up_noblank">用户名：</span>
+                                <div class="inputTip" style="display:none;">4-20个字符（英文、数字、下划线）</div>
+                                <input type="text" class="loginText" @click="input">
+                            </label>
+                        </li>
+                         <li>
+                            <label for="username">
+                                <span class="up_noblank" >密码：</span>
+                                <div class="inputTip"  style="display:none">8-30个字符(包含数字、小写字母、大写字母、特殊符号中的三类及以上字符)</div>
                                 <input type="text" class="loginText">
                             </label>
                         </li>
                          <li>
                             <label for="username">
-                                <up:name class="up_noblank">密码:</up:name>
-                                <div class="inputTip"></div>
+                                <span class="up_noblank">确认密码：</span>
+                                <div class="inputTip"  style="display:none">请再次输入密码</div>
                                 <input type="text" class="loginText">
                             </label>
                         </li>
                          <li>
                             <label for="username">
-                                <up:name class="up_noblank">确认密码:</up:name>
-                                <div class="inputTip"></div>
+                                <span class="up_noblank">邮箱：</span>
+                                <div class="inputTip"  style="display:none">请输入您的常用邮箱地址（选填）</div>
                                 <input type="text" class="loginText">
                             </label>
                         </li>
                          <li>
                             <label for="username">
-                                <up:name class="up_noblank">邮箱:</up:name>
-                                <div class="inputTip"></div>
-                                <input type="text" class="loginText">
-                            </label>
-                        </li>
-                         <li>
-                            <label for="username">
-                                <up:name class="up_noblank">手机号码:</up:name>
-                                <div class="inputTip"></div>
+                                <span class="up_noblank">手机号码：</span>
+                                <div class="inputTip"  style="display:none" >请输入手机（或小灵通）号码</div>
                                 <input type="text" class="loginText">
                             </label>
                         </li>
                          <li>
                             <label for="imgcode">
-                                <up:name class="up_noblank">验证码:</up:name>
-                                <div class="inputTip" style="display:none">请输入图片验证码</div>
+                                <span class="up_noblank">验证：</span>
+                                <div class="inputTip"   style="display:none">请输入图片验证码</div>
                                 <input type="text" class="loginText" style="width:130px">
                                 <img src="../../public/img/index/48.jpg" alt="">
                             </label>
@@ -88,7 +88,7 @@
                         </li>
                         <li style="margin-bottom:10px;">
                             <label style="float:left;width:80px;margin-left:75px;">
-                                <input type="checkbox" id="agree" class="agree" style="width:20px;float:left">
+                                <input type="checkbox" id="agree" class="agree " style="width:20px;float:left">
                                 <label for="agree" class="agreelabel">&nbsp;&nbsp;我同意</label>
                             </label>
                             <a href="javascript:;" class="login-deal service">《萤石服务协议》</a>
@@ -102,7 +102,21 @@
                 </form>
             </div>
         </div>
+     <a href="javascript:;" class="studioDown"></a>
+    <div class="beforefooter" style="height:60px;"></div>
+    <div class="footerBox">
+        <div class="footer clearfix" style="position:relative; margin:0 auto;">
+            <div class="flogo">
+                <img src="../../public/img/index/24.png" alt="">
+                <a href="javascript:;" style="color:#3f3f3f;font-size:13px;">
+                    ©2016&nbsp;
+                    <span>杭州萤石网络有限公司</span>
+                </a>
+                <a href="javascript:;" class="login-deal service">服务条款</a>
+            </div>
+        </div>
     </div>
+</div>
 </body>
 </template>
 <script>
@@ -116,7 +130,14 @@ export default {
             }else{
                 a2.style.display="none"
             }
-        }
+        },
+        // input(){
+        //     var inpu=document.querySelectorAll(".loginText")
+        //     var inputTip=document.querySelectorAll(".inputTip")
+        //    if(inputTip.style.display=="none"){
+        //        inputTip.style.display="block"
+        //    }
+        // }
     }
 }
 </script>
@@ -164,7 +185,9 @@ export default {
        #inc-topnavs .text-gray{
            color:gray;
        }
-       
+       .loginText:focus .inputTip{
+           display: block;
+       }
       #inc-topnavs .text-gray:hover{
            color:#f06c5a;
        }
@@ -210,7 +233,7 @@ export default {
               }
               #inc-topnavs .topnav-item>.triangle-down{
                   padding-right: 15px;
-                  background:url("../../public/img/index/20.png")no-repeat right 9px;
+                  background:url("../../public/img/index/19.png")no-repeat right 9px;
               }
             .register{
                 width:960px;
@@ -257,13 +280,10 @@ export default {
             li label{
                 display: inline-block;
             }
-            up\:name.up_noblank{
-                width:85px;
-                font-size: 13px;
+            .up_noblank{
+                width:65px;
                 display: inline-block;
-            }
-            up\:name{
-                padding-left: 10px;
+                font-size: 13px;
             }
             .inputTip{
                 color:#999999;
@@ -273,6 +293,7 @@ export default {
                 height:18px;
                 top:4px;
                 left: 87px;
+                font-size:12px;
             }
             .register .registForm input{
                 border-color:#E7E7E7;
@@ -332,6 +353,37 @@ export default {
                  font-size: 16px;
                  line-height: 40px;
                  text-align: center;
-                 background: linear-gradient(to top,#f00 bottom, #dc3545);
+                 background-image: linear-gradient(to top,#f00 , #dc3545);
              }
+             .studioDown{
+                 width:42px;
+                 height:187px;
+                 position: fixed;
+                 top:300px;
+                 right: 17px;
+                 cursor: pointer;
+                 background: url("../../public/img/index/23.png")0% 0% no-repeat;
+                 display: block;
+             }
+             .footerBox{
+                 width:100%;
+                background: #ebebeb;
+                margin-top: 3px;
+                 position: absolute;
+                 bottom: 0;
+             }
+              .clearfix{
+                  display:table;
+                  content: "";
+              }
+              .footer>.flogo{
+                  margin: 20px;
+                  width:490px;
+                  text-align: left;
+              }
+              img{
+                  max-width:100%;
+                  vertical-align: middle;
+              }
+             
 </style>
