@@ -122,7 +122,7 @@
                  </a>
              </li>
              <li class="third">
-                <a href="javascript:;" id="back-top">
+                <a href="#" id="back-top">
                     <i class="i-top"></i>
                     返回顶部
                 </a>

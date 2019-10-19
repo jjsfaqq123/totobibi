@@ -46,7 +46,7 @@
                             <label for="username">
                                 <span class="up_noblank">用户名：</span>
                                 <div class="inputTip" style="display:none;">4-20个字符（英文、数字、下划线）</div>
-                                <input type="text" class="loginText" @click="input">
+                                <input type="text" class="loginText">
                             </label>
                         </li>
                          <li>

@@ -67,7 +67,7 @@
              <div class="nav-header">
                 <div class="top-nav clearfix">
                     <div class="logo" style="padding-right:10px">
-                        <a href="header.vue">
+                        <a href="/">
                             <img src="../../public/img/header/logo.png" class="img-1">
                         </a>
                     </div>

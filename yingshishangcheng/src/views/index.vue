@@ -6,22 +6,34 @@
         <!-- 1.轮播图片-->
         <div class="carousel-inner">
             <div class="carousel-item active">
+                <a href="/details">
                 <img  class="d-block index-img scale" src="../../public/img/index/1.jpg"/>
+                </a>
             </div>
             <div class="carousel-item">
+                <a href="/details">
                 <img  class=" d-block index-img scale" src="../../public/img/index/2.jpg"/>
+                </a>
             </div>
             <div class="carousel-item">
+                <a href="/details">
                 <img  class=" d-block index-img scale" src="../../public/img/index/3.jpg"/>
+                </a>
             </div>
             <div class="carousel-item">
+                <a href="/details">
                 <img  class=" d-block index-img scale" src="../../public/img/index/4.jpg"/>
+                </a>
             </div>
              <div class="carousel-item">
+                 <a href="/details">
                 <img  class=" d-block index-img scale" src="../../public/img/index/5.jpg"/>
+                </a>
             </div>
              <div class="carousel-item">
+                <a href="/details">
                 <img  class=" d-block index-img scale" src="../../public/img/index/6.jpg"/>
+                </a>
             </div>
         </div>
         <!-- 3.轮播指示器-->
@@ -39,22 +51,22 @@
     <div class="bottom-banner">
         <ul class="clearfix">
             <li class="bottom-banner-item">
-                <a href="#">
+                <a href="/details2">
                     <img src="../../public/img/index/8.jpg" alt="">
                 </a>
             </li>
             <li class="bottom-banner-item">
-                <a href="#">
+                <a href="/details2">
                     <img src="../../public/img/index/9.jpg" alt="">
                 </a>
             </li>
             <li class="bottom-banner-item">
-                <a href="#">
+                <a href="/details2">
                     <img src="../../public/img/index/10.jpg" alt="">
                 </a>
             </li>
             <li class="bottom-banner-item last-item">
-                <a href="#">
+                <a href="/details2">
                     <img src="../../public/img/index/11.jpg" alt="">
                 </a>
             </li>
@@ -90,12 +102,12 @@
                     <ul class="clearfix">
                         <li class="goods-item">
                             <div class="figure movetop">
-                                <a href="#">
+                                <a href="/details1">
                                     <img src="../../public/img/index/14.jpg" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">【新品-全彩标准版】C3C高清互联网摄像机-10月中旬发货</a>
+                                <a href="/details1" class="name-link">【新品-全彩标准版】C3C高清互联网摄像机-10月中旬发货</a>
                             </h4>
                             <p class="price">￥299（起）</p>
                             <p class="comment"></p>
@@ -107,95 +119,95 @@
                         </li>
                          <li class="goods-item">
                             <div class="figure movetop">
-                                <a href="#">
+                                <a href="/details1">
                                     <img src="../../public/img/index/15.jpg" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">
+                                <a href="/details1" class="name-link">
                                     【立省30】C3WN高清互联网摄像机 标准版
                                 </a>
                             </h4>
                             <p class="price">￥199（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
-                                <a href="#">
+                                <a href="/details1">
                                     无线连接，防水防尘，高清夜视支持接入大部分海康硬盘录像机                                                                        
                                 </a>
                             </div>
                         </li>
                          <li class="goods-item">
                             <div class="figure movetop">
-                                <a href="#">
+                                <a href="/details1">
                                     <img src="../../public/img/index/16.jpg" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">
+                                <a href="/details1" class="name-link">
                                     【日夜全彩】C3W摄像机全彩版/1080P/夜间全彩                                   
                                 </a>
                             </h4>
                             <p class="price">￥399（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
-                                <a href="#">
+                                <a href="/details1">
                                     高清全彩夜视，告别夜间黑白监控，1080P高清，个性语音提示支持接入大部分海康硬盘录像机                                                                                                            
                                 </a>
                             </div>
                         </li>
                         <li class="goods-item">
                             <div class="figure movetop">
-                                <a href="#">
+                                <a href="/details1">
                                     <img src="../../public/img/index/17.jpg" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">
+                                <a href="/details1" class="name-link">
                                     【声光告警】 C3W壁挂式互联网摄像机                                                                      
                                 </a>
                             </h4>
                             <p class="price">￥249（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
-                                <a href="#">
+                                <a href="/details1">
                                     【免费送7天云存储一个月】声光告警，语音对讲，防水防尘，无线稳定连接支持接入大部分海康硬盘录像机                                                                                                                                                
                                 </a>
                             </div>
                         </li>
                          <li class="goods-item">
                             <div class="figure movetop">
-                                <a href="#">
+                                <a href="/details1">
                                     <img src="../../public/img/index/18.jpg" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">
+                                <a href="/details1" class="name-link">
                                     【下单送插排】智能高清摄录套装1080P/4mm/C3W                                                                                                        
                                 </a>
                             </h4>
                             <p class="price">￥549（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
-                                <a href="#">
+                                <a href="/details1">
                                     【下单送插排】声光告警，无线关联，可用于家庭店铺，室内室外通用                                                                                                                                                                                   
                                 </a>
                             </div>
                         </li>
                         <li class="goods-item">
                             <div class="figure movetop">
-                                <a href="#">
+                                <a href="/details1">
                                     <img src="../../public/img/index/19.jpg" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="#" class="name-link">
+                                <a href="/details1" class="name-link">
                                     【POE套装推荐】200万高清POE防水套装/1080P/4mm                                                                                                                                            
                                 </a>
                             </h4>
                             <p class="price">￥508（起）</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
-                                <a href="#">
+                                <a href="/details1">
                                     250米网线供电，支持16个摄像机同步监控，支持多品牌高清摄像机接入，商铺社区通用                                                                                                                                                                                                                       
                                 </a>
                             </div>
@@ -357,7 +369,7 @@
             <div class="card-body clearfix">
                 <div class="goods-bannar la">
                     <div class="video">
-                        <video src="../../public/img/index/141161717.mp4" controls autoplay loop 
+                        <video src="../../public/img/index/141161717.mp4" controls  
                         style="object-fit:cover;width:710ox;height:600px;"></video>
                     </div>
                 </div>
