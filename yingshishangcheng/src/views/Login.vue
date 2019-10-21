@@ -22,6 +22,7 @@
                      <div class="line normal"></div>
                      <p class="description_b normal">还没有账户？ 那就注册一个吧！</p>
                      <a href="#" class="register normal" id="register">注册</a>
+                     <div class="tip" id="tip" style="display:none">用户名不能为空 请输入用户名</div>
                 </div>
             </div>
         </div>
@@ -51,10 +52,17 @@ export default {
             var reg=/^[a-z0-9]{3,12}$/;
             if(reg.test(u)==false){
                 this.$message.error("用户名错误")
+                // var tip=document.getElementById("tip");
+                // tip.style.display="block"
+                // tip.innerHTML="用户名不能为空 请输入用户名"
                 return;
             }
+          
              if(reg.test(p)==false){
                 this.$message.error("密码错误")
+                //  var tip=document.getElementById("tip");
+                // tip.style.display="block"
+                // tip.innerHTML="密码不能为空 请输入密码"
                 return;
             }
             var url="login";
@@ -62,11 +70,13 @@ export default {
             this.axios.get(url,{params:obj}).then(res=>{
                 if(res.data.code<0){
                     this.$message.error("用户名密码错误")
+
                 }else{
                     this.$router.push("/")
                 }
             })
-        }
+           
+        }  
     }
 }
 </script>
@@ -261,6 +271,19 @@ export default {
        .footer>.wrapper a{
            line-height: 32px;
            color:#626262;
+       }
+       #parallax_form .tip{
+           width:207px;
+           height:34px;
+           background: #FEE;
+           border:solid 1px #FAC8C8;
+           position: absolute;
+           top:16px;
+           color:#FF7474;
+           font-size: 14px;
+           line-height: 34px;
+           padding-left: 10px;
+           display: block;
        }
 </style>
 
