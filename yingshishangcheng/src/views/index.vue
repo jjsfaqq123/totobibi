@@ -6,33 +6,33 @@
         <!-- 1.轮播图片-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="/details">
-                <img  class="d-block index-img scale" src="../../public/img/index/1.jpg"/>
+                <a href="/details" >
+                <img  class="d-block index-img scale" :src="list0.pic0"/>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="/details">
-                <img  class=" d-block index-img scale" src="../../public/img/index/2.jpg"/>
+                <img  class=" d-block index-img scale" :src="p1.pic0"/>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="/details">
-                <img  class=" d-block index-img scale" src="../../public/img/index/3.jpg"/>
+                <img  class=" d-block index-img scale" :src="p2.pic0"/>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="/details">
-                <img  class=" d-block index-img scale" src="../../public/img/index/4.jpg"/>
+                <img  class=" d-block index-img scale"  :src="p3.pic0"/>
                 </a>
             </div>
              <div class="carousel-item">
                  <a href="/details">
-                <img  class=" d-block index-img scale" src="../../public/img/index/5.jpg"/>
+                <img  class=" d-block index-img scale"  :src="p4.pic0"/>
                 </a>
             </div>
              <div class="carousel-item">
                 <a href="/details">
-                <img  class=" d-block index-img scale" src="../../public/img/index/6.jpg"/>
+                <img  class=" d-block index-img scale"  :src="p5.pic0"/>
                 </a>
             </div>
         </div>
@@ -50,33 +50,19 @@
     </div>
     <div class="bottom-banner">
         <ul class="clearfix">
-            <li class="bottom-banner-item">
+            <li class="bottom-banner-item" v-for="(item,i) of list" :key="i">
                 <a href="/details2">
-                    <img src="../../public/img/index/8.jpg" alt="">
+                    <img :src="item.pic" alt="">
                 </a>
             </li>
-            <li class="bottom-banner-item">
-                <a href="/details2">
-                    <img src="../../public/img/index/9.jpg" alt="">
-                </a>
-            </li>
-            <li class="bottom-banner-item">
-                <a href="/details2">
-                    <img src="../../public/img/index/10.jpg" alt="">
-                </a>
-            </li>
-            <li class="bottom-banner-item last-item">
-                <a href="/details2">
-                    <img src="../../public/img/index/11.jpg" alt="">
-                </a>
-            </li>
+            <!-- 此处删除了3个li -->
         </ul> 
     </div>
     <div class="goods-container ">
         <div class="goods-card" id="shop-card">
             <div class="card-header">
-                <h2>店铺必备</h2>
-                <a href="#" class="view-more">查看全部&nbsp;></a>
+                <h2>{{title.titleb}}</h2>
+                <a href="#" class="view-more">{{title_right.title_right}}&nbsp;></a>
             </div>
             <div class="card-body clearfix">
                     <div class="goods-body m">
@@ -84,10 +70,10 @@
                         <!-- 1.轮播图片-->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img  class=" d-block index-img scale" src="../../public/img/index/12.jpg"/>
+                                <img  class=" d-block index-img scale" :src="p6.pic0"/>
                             </div>
                             <div class="carousel-item">
-                                <img  class=" d-block index-img scale" src="../../public/img/index/13.jpg"/>
+                                <img  class=" d-block index-img scale" :src="p7.pic0"/>
                             </div>
                         </div>
                         <div class="imgslide-nav">
@@ -100,118 +86,24 @@
                 </div>
                 <div class="goods-list m-list">
                     <ul class="clearfix">
-                        <li class="goods-item">
+                        <li class="goods-item" v-for="(item1,i) of list1" :key="i">
                             <div class="figure movetop">
                                 <a href="/details1">
-                                    <img src="../../public/img/index/14.jpg" alt="">
+                                    <img :src="item1.pic1" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
-                                <a href="/details1" class="name-link">【新品-全彩标准版】C3C高清互联网摄像机-10月中旬发货</a>
+                                <a href="/details1" class="name-link">{{item1.title}}</a>
                             </h4>
-                            <p class="price">￥299（起）</p>
+                            <p class="price">{{item1.price}}</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    【全彩升级】200万超清，夜间彩色监控，H.265智能编码，AI人形检测，防水防尘                                    
+                                    {{item1.sub_title}}                                    
                                 </a>
                             </div>
                         </li>
-                         <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="/details1">
-                                    <img src="../../public/img/index/15.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="/details1" class="name-link">
-                                    【立省30】C3WN高清互联网摄像机 标准版
-                                </a>
-                            </h4>
-                            <p class="price">￥199（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="/details1">
-                                    无线连接，防水防尘，高清夜视支持接入大部分海康硬盘录像机                                                                        
-                                </a>
-                            </div>
-                        </li>
-                         <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="/details1">
-                                    <img src="../../public/img/index/16.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="/details1" class="name-link">
-                                    【日夜全彩】C3W摄像机全彩版/1080P/夜间全彩                                   
-                                </a>
-                            </h4>
-                            <p class="price">￥399（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="/details1">
-                                    高清全彩夜视，告别夜间黑白监控，1080P高清，个性语音提示支持接入大部分海康硬盘录像机                                                                                                            
-                                </a>
-                            </div>
-                        </li>
-                        <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="/details1">
-                                    <img src="../../public/img/index/17.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="/details1" class="name-link">
-                                    【声光告警】 C3W壁挂式互联网摄像机                                                                      
-                                </a>
-                            </h4>
-                            <p class="price">￥249（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="/details1">
-                                    【免费送7天云存储一个月】声光告警，语音对讲，防水防尘，无线稳定连接支持接入大部分海康硬盘录像机                                                                                                                                                
-                                </a>
-                            </div>
-                        </li>
-                         <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="/details1">
-                                    <img src="../../public/img/index/18.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="/details1" class="name-link">
-                                    【下单送插排】智能高清摄录套装1080P/4mm/C3W                                                                                                        
-                                </a>
-                            </h4>
-                            <p class="price">￥549（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="/details1">
-                                    【下单送插排】声光告警，无线关联，可用于家庭店铺，室内室外通用                                                                                                                                                                                   
-                                </a>
-                            </div>
-                        </li>
-                        <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="/details1">
-                                    <img src="../../public/img/index/19.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="/details1" class="name-link">
-                                    【POE套装推荐】200万高清POE防水套装/1080P/4mm                                                                                                                                            
-                                </a>
-                            </h4>
-                            <p class="price">￥508（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="/details1">
-                                    250米网线供电，支持16个摄像机同步监控，支持多品牌高清摄像机接入，商铺社区通用                                                                                                                                                                                                                       
-                                </a>
-                            </div>
-                        </li>
+                         <!-- 此处删除5个li -->
                     </ul>
                 </div>
             </div>
@@ -219,8 +111,8 @@
         </div>
         <div class="goods-card">
             <div class="card-header">
-                <h2>家庭必备</h2>
-                <a href="javascript:;" class="view-more">查看全部&nbsp;></a>
+                <h2>{{titleb1.titleb1}}</h2>
+                <a href="javascript:;" class="view-more">{{title_right1.title_right1}}&nbsp;></a>
             </div>
             <div class="card-body clearfix">
                 <div class="goods-banner m">
@@ -228,10 +120,10 @@
                         <!-- 1.轮播图片-->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img  class=" d-block index-img scale" src="../../public/img/index/20.jpg"/>
+                                <img  class=" d-block index-img scale" :src="p8.pic0"/>
                             </div>
                             <div class="carousel-item">
-                                <img  class=" d-block index-img scale" src="../../public/img/index/21.jpg"/>
+                                <img  class=" d-block index-img scale" :src="p9.pic0"/>
                             </div>
                         </div>
                         <div class="imgslide-nav">
@@ -244,168 +136,63 @@
                 </div>
                  <div class="goods-list m-list">
                     <ul class="clearfix">
-                        <li class="goods-item">
+                        <li class="goods-item" v-for="(item2,i) of list2" :key="i">
                             <div class="figure movetop">
                                 <a href="#">
-                                    <img src="../../public/img/index/22.jpg" alt="">
+                                    <img :src="item2.pic2" alt="">
                                 </a>
                             </div>
                             <h4 class="goods-title">
                                 <a href="#" class="name-link">
-                                【新品首发】CP1萤石互联网摄像机</a>
+                                {{item2.title1}}</a>
                             </h4>
-                            <p class="price">￥199（起）</p>
+                            <p class="price">{{item2.price1}}</p>
                             <p class="comment"></p>
                             <div class="key-worlds slidd">
                                 <a href="#">
-                                    【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控                                                                       
+                                    {{item2.sub_title1}}                                                                       
                                 </a>
                             </div>
                         </li>
-                         <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="#">
-                                    <img src="../../public/img/index/23.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="#" class="name-link">
-                                    【室内高清】C6C互联网摄像机-无极巡航版/1080P                                    
-                                </a>
-                            </h4>
-                            <p class="price">￥349（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="#">
-                                    【赠一个月云存储】新升级，360°加速循环转动，智能人形追踪，双向通话，加强看家护店之选                                                                                                           
-                                </a>
-                            </div>
-                        </li>
-                         <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="#">
-                                    <img src="../../public/img/index/24.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="#" class="name-link">
-                                    【高清触控】DP1萤石智能猫眼（触控屏版）                                                                       
-                                </a>
-                            </h4>
-                            <p class="price">￥799（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="#">
-                                    智能猫眼，高清触控屏，红外夜视，可远程视频对话访客                                                                                                                                                
-                                </a>
-                            </div>
-                        </li>
-                        <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="#">
-                                    <img src="../../public/img/index/25.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="#" class="name-link">
-                                    【指纹感应】DL11S家用指纹互联网密码锁                                                                                                         
-                                </a>
-                            </h4>
-                            <p class="price">￥1999（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="#">
-                                    新品上市，安全等级高，远程授权密码开门，指纹感应灵敏！                                                                                                                                                                                    
-                                </a>
-                            </div>
-                        </li>
-                         <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="#">
-                                    <img src="../../public/img/index/26.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="#" class="name-link">
-                                    【下单送插排】智能高清摄录套装1080P/4mm/C3W                                                                                                        
-                                </a>
-                            </h4>
-                            <p class="price">￥549（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="#">
-                                    【下单送插排】声光告警，无线关联，可用于家庭店铺，室内室外通用                                                                                                                                                                                   
-                                </a>
-                            </div>
-                        </li>
-                        <li class="goods-item">
-                            <div class="figure movetop">
-                                <a href="#">
-                                    <img src="../../public/img/index/27.jpg" alt="">
-                                </a>
-                            </div>
-                            <h4 class="goods-title">
-                                <a href="#" class="name-link">
-                                    【人形检测】C1C萤石互联网摄像机 高清夜视版/1080P                                                                                                                                                                                
-                                </a>
-                            </h4>
-                            <p class="price">￥199（起）</p>
-                            <p class="comment"></p>
-                            <div class="key-worlds slidd">
-                                <a href="#">
-                                    【送1个月云存储】12米升级夜视，人形检测，精准有效告警，双向通话，磁吸安装！经济便捷，看家看店之选                                                                                                                                                                                                                                                          
-                                </a>
-                            </div>
-                        </li>
+                         <!-- 此处删除5个li -->
                     </ul>
                 </div>
             </div>
         </div>
         <div class="goods-card">
             <div class="card-header">
-                <h2>运动必备</h2>
-                <a href="javascript:;" class="view-more">查看全部</a>
+                <h2>{{titleb2.titleb2}}</h2>
+                <a href="javascript:;" class="view-more">{{title_right2.title_right2}}</a>
             </div>
             <div class="card-body clearfix">
                 <div class="goods-bannar la">
                     <div class="video">
                         <video src="../../public/img/index/141161717.mp4" controls  
-                        style="object-fit:cover;width:710ox;height:600px;"></video>
+                         loop autoplay style="object-fit:cover;width:710ox;height:600px;"></video>
                     </div>
                 </div>
                 <div class="goods-list la-list">
                     <ul class="clearfix">
-                        <li class="goods-item full">
+                        <li class="goods-item full" >
                             <div class="figure movetop" style="height:248px;">
                                 <a href="#">
-                                    <img src="../../public/img/index/28.jpg" class="index-img scale">
+                                    <img :src="pric_img.pic3" class="index-img scale">
                                 </a>
                             </div>
                         </li>
-                        <li class="goods-item no-bottom">
+                        <li class="goods-item no-bottom" v-for="(item4,i) of list3" :key="i">
                             <div class="figure movetop">
                                 <a href="#">
-                                    <img src="../../public/img/index/29.jpg" alt="">
+                                    <img :src="item4.pic3" alt="">
                                 </a>
                                 <h4 class="goods-title">
-                                    <a href="#">S1C行车记录运动相机</a>
+                                    <a href="#">{{item4.title_img}}</a>
                                 </h4>
-                                <p class="price">￥299(起)</p>
+                                <p class="price">{{item4.titie_price}}</p>
                                 <p class="comment"></p>
                             </div>
                         </li>
-                        <li class="goods-item no-bottom aside-right">
-                            <div class="figure movetop">
-                                <a href="#">
-                                    <img src="../../public/img/index/30.jpg" alt="">
-                                </a>
-                                <h4 class="goods-title">
-                                    <a href="#">S2行车记录仪运动相机</a>
-                                </h4>
-                                <p class="price">￥399(起)</p>
-                                <p class="comment"></p>
-                            </div>
-                        </li>
+                        <!-- 此处删除一个li -->
                     </ul>
                 </div>
             </div>
@@ -413,29 +200,29 @@
     </div>
     <div class="goods-card">
         <div class="card-header" style="padding:0">
-            <h2>套装专区</h2>
-            <a href="javascript:;" class="view-more">查看全部</a>
+            <h2>{{titleb3.titleb3}}</h2>
+            <a href="javascript:;" class="view-more">{{title_right3.title_right3}}</a>
         </div>
         <div class="card-body clearfix  haha">
             <div class="goods-banner m">
                 <div class="goods-banner-item" style="overflow:none">
                     <a href="#">
-                        <img src="../../public/img/index/31.jpg" class="index-img scale">
+                        <img :src="pric_img1.pic4" class="index-img scale">
                     </a>
                 </div>
             </div>
             <div class="goods-list m-list">
                 <ul class="clearfix">
-                    <li class="goods-item no-bottom">
+                    <li class="goods-item no-bottom" v-for="(item5,i) of list4" :key="i">
                         <div class="figure movetop">
                             <a href="#">
-                                <img src="../../public/img/index/32.jpg" class="index-img">
+                                <img :src="item5.pic4" class="index-img">
                             </a>
                         </div>
                         <h4 class="goods-title">
-                            <a href="javascript:;" class="name-link">【全彩双摄新品】POE400万高清双摄暗光夜视套装-10月中发货</a>
+                            <a href="javascript:;" class="name-link">{{pic_center.title_img1}}</a>
                         </h4>
-                        <p class="price">￥799(起)</p>
+                        <p class="price">{{pic_center1.title_price}}</p>
                         <p class="key-worlds">
                             <a href="javascript:;"></a>
                         </p>
@@ -476,8 +263,8 @@
     </div>
     <div class="goods-card">
         <div class="card-header" style="padding:0">
-            <h2>配件专区</h2>
-            <a href="javascript:;" class="view-more">查看全部&nbsp;></a>
+            <h2>{{titleb4.titleb4}}</h2>
+            <a href="javascript:;" class="view-more">{{title_right4.title_right4}}&nbsp;></a>
         </div>
         <div class="card-body clearfix">
             <div class="goods-banner sm">
@@ -601,7 +388,7 @@
     <!-- 服务专区 -->
     <div class="goods-card" id="service-card">
         <div class="card-header">
-            <h2>服务专区</h2>
+            <h2>{{titleb5.titleb5}}</h2>
             <a href="javascript:;" class="view-more"></a>
         </div>
         <div class="card-body service-card-body clearfix">
@@ -626,7 +413,7 @@
     <!-- 视频体验 -->
     <div class="goods-card" id="video-card">
         <div class="card-header">
-            <h2>视频体验</h2>
+            <h2>{{titleb6.titleb6}}</h2>
         </div>
         <div class="card-body video-card-body cleaefix">
             <div class="video-item">
@@ -660,6 +447,140 @@
  import  hea from "../components/header.vue";
  import  foot from "../components/footer.vue"
 export default { 
+    data(){
+        return{
+            // 左标题文字
+            title:{titleb:"店铺必备"},
+            titleb1:{titleb1:"家庭必备"},
+            titleb2:{titleb2:"运动必备"},
+            titleb3:{titleb3:"套装专区"},
+            titleb4:{titleb4:"配件换区"},
+            titleb5:{titleb5:"服务专区"},
+            titleb6:{titleb6:"视频体验"},
+            //右标题文字
+            title_right:{title_right:"查看详情"},
+            title_right1:{title_right1:"查看详情"},
+            title_right2:{title_right2:"查看详情"},
+            title_right3:{title_right3:"查看详情"},
+            title_right4:{title_right4:"查看详情"},
+            // 轮播图图片
+            list0:{pic0:require("../../public/img/index/1.jpg")},
+                p1:{pic0:require("../../public/img/index/2.jpg")},
+                p2:{pic0:require("../../public/img/index/3.jpg")},
+                p3:{pic0:require("../../public/img/index/4.jpg")},
+                p4:{pic0:require("../../public/img/index/5.jpg")},
+                p5:{pic0:require("../../public/img/index/6.jpg")},
+                p6:{pic0:require("../../public/img/index/12.jpg")},
+                p7:{pic0:require("../../public/img/index/13.jpg")},
+                p8:{pic0:require("../../public/img/index/20.jpg")},
+                p9:{pic0:require("../../public/img/index/21.jpg")},
+            // 轮播图下的第一个图片
+           list:[
+                {pic:require("../../public/img/index/8.jpg")},
+                {pic:require("../../public/img/index/9.jpg")},
+                {pic:require("../../public/img/index/10.jpg")},
+                {pic:require("../../public/img/index/11.jpg")},
+            ],
+            // 店铺必备数据
+            list1:[
+                {
+                    pic1:require("../../public/img/index/14.jpg"),
+                    title:"【新品-全彩标准版】C3C高清互联网摄像机-10月中旬发货",
+                    price:"￥299（起）",
+                    sub_title:"【全彩升级】200万超清，夜间彩色监控，H.265智能编码，AI人形检测，防水防尘"
+                },
+                {
+                    pic1:require("../../public/img/index/15.jpg"),
+                    title:"【立省30】C3WN高清互联网摄像机 标准版",
+                    price:"￥199（起）",
+                    sub_title:"无线连接，防水防尘，高清夜视支持接入大部分海康硬盘录像机"
+                },
+                {
+                    pic1:require("../../public/img/index/16.jpg"),
+                    title:"【日夜全彩】C3W摄像机全彩版/1080P/夜间全彩 ",
+                    price:"￥399（起）",
+                    sub_title:" 高清全彩夜视，告别夜间黑白监控，1080P高清，个性语音提示支持接入大部分海康硬盘录像机"
+                },
+                {
+                    pic1:require("../../public/img/index/17.jpg"),
+                    title:"【声光告警】 C3W壁挂式互联网摄像机",
+                    price:"￥249（起）",
+                    sub_title:"【免费送7天云存储一个月】声光告警，语音对讲，防水防尘，无线稳定连接支持接入大部分海康硬盘录像机"
+                },
+                {
+                    pic1:require("../../public/img/index/18.jpg"),
+                    title:"【下单送插排】智能高清摄录套装1080P/4mm/C3W",
+                    price:"￥549（起）",
+                    sub_title:"【下单送插排】声光告警，无线关联，可用于家庭店铺，室内室外通用"
+                },
+                {
+                    pic1:require("../../public/img/index/19.jpg"),
+                    title:"【POE套装推荐】200万高清POE防水套装/1080P/4mm ",
+                    price:"￥508（起）",
+                    sub_title:"250米网线供电，支持16个摄像机同步监控，支持多品牌高清摄像机接入，商铺社区通用"
+                },
+            ],
+            // 家庭必备图片
+            list2:[
+                {
+                    pic2:require("../../public/img/index/22.jpg"),
+                    title1:"【新品首发】CP1萤石互联网摄像机</a>",
+                    price1:"￥199（起)",
+                    sub_title1:"【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控"
+                },
+                {
+                    pic2:require("../../public/img/index/23.jpg"),
+                    title1:"【室内高清】C6C互联网摄像机-无极巡航版/1080P ",
+                    price1:"￥349（起）",
+                    sub_title1:"【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控"
+                },
+                {
+                    pic2:require("../../public/img/index/24.jpg"),
+                    title1:"【室内高清】C6C互联网摄像机-无极巡航版/1080P ",
+                    price1:"￥349（起）",
+                    sub_title1:"【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控"
+                },
+                {
+                    pic2:require("../../public/img/index/25.jpg"),
+                    title1:"【室内高清】C6C互联网摄像机-无极巡航版/1080P ",
+                    price1:"￥349（起）",
+                    sub_title1:"【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控"
+                },
+                {
+                    pic2:require("../../public/img/index/26.jpg"),
+                    title1:"【室内高清】C6C互联网摄像机-无极巡航版/1080P ",
+                    price1:"￥349（起）",
+                    sub_title1:"【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控"
+                }
+                ,{
+                    pic2:require("../../public/img/index/27.jpg"),
+                    title1:"【室内高清】C6C互联网摄像机-无极巡航版/1080P ",
+                    price1:"￥349（起）",
+                    sub_title1:"【送1个月云存储视频回放】1080p高清,夜视自动调节,人脸检测,人形追踪,360度监控"
+                }
+            ],
+            //视频右侧图片
+           pric_img:{pic3:require("../../public/img/index/28.jpg")},
+           pric_img1:{pic4:require("../../public/img/index/31.jpg")},
+            list3:[
+                {
+                    pic3:require("../../public/img/index/29.jpg"),
+                    title_img:"S1C行车记录运动相机",
+                    title_price:"￥299(起)",
+                },
+                {
+                    pic3:require("../../public/img/index/30.jpg"),
+                    title_img:"S2行车记录仪运动相机",
+                    title_price:"￥399(起)",
+                },
+            ],
+           list4:[
+               {pic4:require("../../public/img/index/32.jpg")}, 
+           ],
+            pic_center:{title_img1:"【全彩双摄新品】POE400万高清双摄暗光夜视套装-10月中发货"},
+            pic_center1:{title_price:"￥799(起)"}
+           }
+        },
     components:{hea,foot}
 }
 </script>
@@ -728,7 +649,7 @@ export default {
             height:200px;
 
         }
-        .bottom-banner .bottom-banner-item.last-item{
+        .bottom-banner .bottom-banner-item:last-child{
             margin-right: -8px;
         }
         .goods-container{

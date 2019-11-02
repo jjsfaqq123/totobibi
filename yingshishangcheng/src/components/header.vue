@@ -5,25 +5,25 @@
                <div class="nav-toolbar">
                 <ul class="toolbar-menu">
                     <li class="menu-item">
-                        <a href="">萤石商城</a>
+                        <a href="javascript:;">萤石商城</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">服务下载</a>
+                        <a href="javascript:;">服务下载</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">开发者平台</a>
+                        <a href="javascript:;">开发者平台</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">零售服务商</a>
+                        <a href="javascript:;">零售服务商</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">萤石运动</a>
+                        <a href="javascript:;">萤石运动</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">集团客户</a>
+                        <a href="javascript:;">集团客户</a>
                     </li>
                      <li class="menu-item">
-                        <a href="">
+                        <a href="javascript:;">
                             <i class="arrow-right"></i>
                             进入莹石云
                             </a>
@@ -31,7 +31,7 @@
                      </ul>
                      <ul class="toolbar-user clearfix align-right">
                          <li class="user-item end-item">
-                             <a href="login.html" class="user-link">我的订单</a>
+                             <a href="/login" class="user-link">我的订单</a>
                          </li>
                          <li class="user-item end-item header-cart">
                              <div class="user-link" id="minicart-link">
@@ -76,6 +76,23 @@
                             <ul class="clearfix inner-scrool" style="width:8000px;">
                                 <li class="nav-list-item">
                                     <a href="#" class="item-link">摄影机</a>
+                                    <div class="item-children" data-list-key="0">
+                                        <div class="child-container">
+                                            <ul class="item-ul clearfix">
+                                                <li class="child-list-item">
+                                                <div class="figure thumb">
+                                                    <a href="javascript:;">
+                                                        <img src="../../public/img/header/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <h4 class="goods-title">
+                                                    <a href="" class="name-link">【新品-双11预售专享】CP1萤石互联网摄像机-前200名预定送16G卡 每个ID限送1张</a>
+                                                    <p class="price">￥199(起)</p>
+                                                </h4>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </li>
                                  <li class="nav-list-item">
                                     <a href="#" class="item-link">智能锁</a>
@@ -206,7 +223,7 @@
 <script>
 
 export default {
-
+   
 }
 </script>
 <style scoped>
@@ -440,6 +457,12 @@ export default {
        display: block;
        overflow: hidden;
    }
+   .nav-list-item:hover .item-children{
+       height:300px;
+       width:100%;
+       z-index:2;
+       overflow: hidden;
+   }
    .nav-list .nav-list-item{
        float: left;
        cursor: pointer;
@@ -626,6 +649,36 @@ export default {
      }
       .hot-world-item:hover{
           background-color:#f26a18;
+      }
+      .item-children{
+          display: none;
+      }
+      .child-container{
+          width:1200px;
+          height:100%;
+          margin: 0 auto;
+          overflow: hidden;
+      }
+      .item-ul ul{
+          position: absolute;
+          display: block;
+          width:auto;
+          margin-left: 0;
+          overflow: hidden;
+      }
+      .item-ul{
+          position: relative;
+          left:0;
+          transition:all .7s cubic-bezier(.64,-.33,.42,1.36)
+      }
+      .child-list-item{
+         position: relative;
+         float: left;
+         width:240px;
+         height:200px;
+         text-align: center;
+         cursor: auto;
+         overflow: hidden; 
       }
 </style>
 
