@@ -12,13 +12,14 @@ Vue.use(Router)
 export default new Router({
   mode:"history",
   routes: [
-      {path:"*",component:NontFount},
       {path:"/",component:index},
+      {path:"/index",component:index},
       {path:"/login",component:login},
       {path:"/fall",component:fall},
       {path:"/header",component:header},
       {path:"/details",component:details},
       {path:"/details1",component:details1},
       {path:"/details2",component:details2},
+      {path:"*",component:NontFount},
   ]
 })
