@@ -56,7 +56,7 @@
                      </ul>
                      <ul class="toolbar-user" clearfix id="loginbar">
                          <li class="item-item  login">
-                             <router-link to="login" class="user-link" >登录</router-link>
+                             <router-link to="login" class="user-link" :class="active==1 ? 'active' : ''" >{{userLogin}}</router-link>
                          </li>
                          <li class="item-item">
                              <a href="/fall" class="user-link">注册</a>
@@ -221,13 +221,40 @@
     </div> 
 </template>
 <script>
-
+import { mapState, mapMutations } from 'vuex';
 export default {
-   
+   data() {
+       return {
+           userLogin:"登录",
+           active:1,
+       }
+   },
+   created() {
+       this.tihuan();
+   },
+   computed: {
+    ...mapState(["userHome"])
+  },
+  methods : {
+      ...mapMutations(["userHomeLet"]),
+      tihuan() {
+          if(this.userHome == null) {
+              this.userHome = "";
+          }else {
+              this.userLogin = this.userHome;
+              this.active=1
+          }
+      }
+  }
 }
 </script>
 <style scoped>
 @import url("../assets/css/comm.css"); 
+    .active {
+        color:#f26b18;
+        border:1px solid #f26b18;
+        border-radius: 5px;
+    }
     .nav-wrapper{
         width:100%;
         min-width:1200px;
