@@ -56,7 +56,7 @@
                      </ul>
                      <ul class="toolbar-user" clearfix id="loginbar">
                          <li class="item-item  login">
-                             <router-link to="login" class="user-link" :class="active==1 ? 'active' : ''" >{{userLogin}}</router-link>
+                             <router-link to="" class="user-link" :class="active==1 ? 'active' : ''"  @click.native="upload">{{userLogin}}</router-link>
                          </li>
                          <li class="item-item">
                              <a href="/fall" class="user-link">注册</a>
@@ -225,12 +225,14 @@ import { mapState, mapMutations } from 'vuex';
 export default {
    data() {
        return {
+           attse:this.$route.query.alers,
            userLogin:"登录",
            active:1,
        }
    },
    created() {
        this.tihuan();
+       this.open()
    },
    computed: {
     ...mapState(["userHome"])
@@ -239,13 +241,33 @@ export default {
       ...mapMutations(["userHomeLet"]),
       tihuan() {
           if(this.userHome == null) {
-              this.userHome = "";
+              this.userLogin="登录"
           }else {
               this.userLogin = this.userHome;
               this.active=1
           }
+      },
+      upload() {
+        this.$confirm('您确定要退出登录吗','提示',{
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+        }).then(() => {
+          this.$router.push('/login')
+        }) 
+      },
+       open() {
+      if(this.attse == false){
+        this.$alert('你还没有登录哦 ！ 请先登录', {
+          confirmButtonText: '确定',
+          callback: action => {
+            this.userLogin = '登录'
+           this.$router.push("/login")
+          }
+        });
       }
-  }
+    }
+  }, 
 }
 </script>
 <style scoped>

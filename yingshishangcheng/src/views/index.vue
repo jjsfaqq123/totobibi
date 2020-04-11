@@ -448,7 +448,6 @@ import foot from "../components/footer.vue";
 export default {
   data() {
     return {
-     attse:this.$route.query.alers,
       // 左标题文字
       title: { titleb: "店铺必备" },
       titleb1: { titleb1: "家庭必备" },
@@ -593,20 +592,11 @@ export default {
     };
   },
   created() {
-      if(this.attse !== true){
-      this.open();
-      }
+      
   },
   
   methods: {
-    open() {
-        this.$alert('你还没有登录哦 ！ 请先登录', {
-          confirmButtonText: '确定',
-          callback: action => {
-           this.$router.push("/login")
-          }
-        });
-    }
+   
   },
   components: { hea, foot }
 }

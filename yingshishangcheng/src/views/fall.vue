@@ -82,9 +82,10 @@
                                 <span class="up_noblank">验证：</span>
                                 <div class="inputTip"   style="display:none">请输入图片验证码</div>
                                 <input type="text" class="loginText" style="width:130px">
-                                <img src="../../public/img/index/48.jpg" alt="">
+                                <!-- <img src="../../public/img/index/48.jpg" alt=""> -->
+                                <span class="code">FAKL</span>
                             </label>
-                            <a href="javascript:;" class="code_again">看不清</a>
+                            <span  class="code_again" @click="sort">看不清</span>
                         </li>
                         <li style="margin-bottom:10px;">
                             <label style="float:left;width:80px;margin-left:75px;">
@@ -131,13 +132,17 @@ export default {
                 a2.style.display="none"
             }
         },
-        // input(){
-        //     var inpu=document.querySelectorAll(".loginText")
-        //     var inputTip=document.querySelectorAll(".inputTip")
-        //    if(inputTip.style.display=="none"){
-        //        inputTip.style.display="block"
-        //    }
-        // }
+        sort() {
+            let code =""
+            let codelength=4
+            let we=[1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','M','L','N','O','P','Q','R','S','D','U','V','W','S','Y','Z']
+           for(var i=0;i<codelength;i++){
+               var chearIndex = Math.floor(Math.random()*we.length)
+               code+=we[chearIndex]
+           }
+           let imgs = document.querySelector('.code');
+           imgs.innerHTML = code;
+        }
     }
 }
 </script>

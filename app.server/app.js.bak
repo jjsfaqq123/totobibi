@@ -7,7 +7,11 @@ server.use(cors({
     origin:["http://127.0.0.1:8080","http://localhost:8080"],
     credentials:true
 }));
-
+server.use(session({
+    secret:"128位安全字符串",
+    resave:true,
+    saveUninitialized:true,
+}));
 server.listen(5000)
 console.log("服务器正在监听端口： 5000");
 //用户登录

@@ -9,7 +9,7 @@
           <p class="description_a">欢迎登录萤石商城</p>
           <form id="form">
             <el-input
-              v-model="uname"
+              v-model="params.uname"
               type="text"
               placeholder="用户名或手机号"
               style="margin-bottom:14px !important"
@@ -17,7 +17,7 @@
             ></el-input>
             <h6 style="color:red;display:none">用户名必须介于6~12位数字或字母</h6>
             <el-input
-              v-model="upwd"
+              v-model="params.upwd"
               type="password"
               placeholder="请输入密码"
               style="margin-bottom:14px !important"
@@ -34,7 +34,7 @@
           <a class="login" @click="login" :plain="true">登&nbsp;&nbsp;&nbsp;录</a>
           <div class="line normal"></div>
           <p class="description_b normal">还没有账户？ 那就注册一个吧！</p>
-          <a href="#" class="register normal" id="register">注册</a>
+          <router-link to="/fall" class="register normal" id="register">注册</router-link>
           <div class="tip" id="tip" style="display:none">用户名不能为空 请输入用户名</div>
         </div>
       </div>
@@ -51,11 +51,14 @@
 </template>
 <script>
 import { mapState, mapMutations } from "vuex";
+//  import { login } from "@/ulits/api"
 export default {
   data() {
     return {
-      uname: "",
-      upwd: "",
+      params:{
+        uname: "",
+        upwd: "",
+      },
       automatic: false
     };
   },
@@ -73,32 +76,36 @@ export default {
   },
   methods: {
     ...mapMutations(["homeAlert" ,"userHomeLet"]),
-    login() {
-      var u = this.uname;
-      var p = this.upwd;
-      var reg = /^[a-z0-9]{3,12}$/;
-      if (reg.test(u) == false) {
-        this.$message.error("用户名错误");
-        // var tip=document.getElementById("tip");
-        // tip.style.display="block"
-        // tip.innerHTML="用户名不能为空 请输入用户名"
-        return;
+    async login() {
+      //判断用户
+      if(!this.params.uname) {
+        this.$message.error("用户名不能为空")
+        return false;
       }
-      if (reg.test(p) == false) {
-        this.$message.error("密码错误");
-        //  var tip=document.getElementById("tip");
-        // tip.style.display="block"
-        // tip.innerHTML="密码不能为空 请输入密码"
-        return;
+      //判断用户名长度
+      if(this.params.uname.length<6) {
+        this.$message.error('用户名最少6位')
+        return false;
       }
-
+      //判断密码
+      if(!this.params.upwd){
+        this.$message.error('密码不能为空');
+        return false;
+      }
+      //判断密码长度
+      if(this.params.upwd.length<3){
+        this.$message.error('密码长度最少3位');
+        return false;
+      }
+      // let res = await login(this.params) 
+      // console.log(res)
+     
       var url = "login";
-      var obj = { uname: u, upwd: p };
-      this.axios.get(url, { params: obj }).then(res => {
+      this.axios.get(url, { params: this.params }).then(res => {
         if (res.data.code == 1) {
           // document.cookie=u + "," + p + ',' +this.automatic;
           if (this.automatic == true) {
-            document.cookie = u + "," + p + "," + this.automatic;
+            document.cookie = this.params.uname + "," +this.params. upwd + "," + this.automatic;
           } else {
             document.cookie = "";
           }
@@ -114,13 +121,13 @@ export default {
           this.$message.error("用户名密码错误");
         }
       });
-    },
+     },
     logins() {
       let unames = document.cookie;
       if (unames.length > 1) {
         unames = unames.split(",");
-        this.uname = unames[0];
-        this.upwd = unames[1];
+        this.params.uname = unames[0];
+        this.params.upwd = unames[1];
         this.automatic = Boolean(unames[2]);
         // yanz
       }
